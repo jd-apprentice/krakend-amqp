@@ -7,7 +7,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"math"
 
 	"github.com/streadway/amqp"
 
@@ -42,10 +41,6 @@ func (f backendFactory) initConsumer(ctx context.Context, remote *config.Backend
 		return proxy.NoopProxy, err
 	}
 	cfg.LogPrefix = logPrefix
-
-	if cfg.MaxRetries <= 0 {
-		cfg.MaxRetries = math.MaxInt64
-	}
 
 	connHandler := newConnectionHandler(ctx, f.logger, cfg.LogPrefix)
 	msgs, err := connHandler.newConsumer(dns, cfg, DefaultStartupRetries, DefaultBackoffStrategy)

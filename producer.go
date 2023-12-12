@@ -6,7 +6,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"math"
 	"strconv"
 	"time"
 
@@ -59,10 +58,6 @@ func (f backendFactory) initProducer(ctx context.Context, remote *config.Backend
 		return proxy.NoopProxy, err
 	}
 	cfg.LogPrefix = logPrefix
-
-	if cfg.MaxRetries <= 0 {
-		cfg.MaxRetries = math.MaxInt64
-	}
 
 	connHandler := newConnectionHandler(ctx, f.logger, cfg.LogPrefix)
 	if err := connHandler.newProducer(dns, cfg, DefaultStartupRetries, DefaultBackoffStrategy); err != nil {
