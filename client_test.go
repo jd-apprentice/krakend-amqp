@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/luraproject/lura/v2/config"
-	"github.com/luraproject/lura/v2/encoding"
-	"github.com/luraproject/lura/v2/logging"
-	"github.com/luraproject/lura/v2/proxy"
+	"github.com/jd-apprentice/lura/v2/config"
+	"github.com/jd-apprentice/lura/v2/encoding"
+	"github.com/jd-apprentice/lura/v2/logging"
+	"github.com/jd-apprentice/lura/v2/proxy"
 )
 
 var (

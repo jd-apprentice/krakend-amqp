@@ -14,9 +14,9 @@ import (
 
 	ratelimit "github.com/krakendio/krakend-ratelimit/v3"
 
-	"github.com/luraproject/lura/v2/config"
-	"github.com/luraproject/lura/v2/logging"
-	"github.com/luraproject/lura/v2/proxy"
+	"github.com/jd-apprentice/lura/v2/config"
+	"github.com/jd-apprentice/lura/v2/logging"
+	"github.com/jd-apprentice/lura/v2/proxy"
 )
 
 // Subscriber defines the configuration of a single subscriber/consumer to be initialized

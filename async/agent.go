@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/luraproject/lura/v2/async"
-	"github.com/luraproject/lura/v2/logging"
+	"github.com/jd-apprentice/lura/v2/async"
+	"github.com/jd-apprentice/lura/v2/logging"
 )
 
 const minExecutionTime = 5 * time.Second

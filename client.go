@@ -8,10 +8,10 @@ import (
 
 	"github.com/streadway/amqp"
 
-	"github.com/luraproject/lura/v2/backoff"
-	"github.com/luraproject/lura/v2/config"
-	"github.com/luraproject/lura/v2/logging"
-	"github.com/luraproject/lura/v2/proxy"
+	"github.com/jd-apprentice/lura/v2/backoff"
+	"github.com/jd-apprentice/lura/v2/config"
+	"github.com/jd-apprentice/lura/v2/logging"
+	"github.com/jd-apprentice/lura/v2/proxy"
 )
 
 var (
